@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    grid-area: header;
+    background-color: #34495e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #34495e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+#role_logo{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    display: grid;
+    grid-template-areas:
+        "sidebar header"
+        "sidebar content"
+        "sidebar footer";
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 120px auto 120px;
+    height: 100vh;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin: 0 0 20px 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul .part {
+    margin-top: 20px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.sidebar ul li > a[href="#employees"],
+.sidebar ul li > a[href="#request"],
+.sidebar ul li > a[href="#events"],
+.sidebar ul li > a[href="#presents"] {
+    color: #ff6347;
+    font-size: large;
+    font-weight: bold;
+}
+
+.submenu li a:hover {
+    background-color: #34495e;
+}
+
+#sidebar_dashboard:hover {
+    background-color: #34495e;
+}
+
+.submenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.submenu li {
+    margin: 5px 0;
+}
+
+.submenu li a {
+    margin-left: 20px;
+}
+
+.content {
+    grid-area: content;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+
+.current_page{
+    background-color: #34495e;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+#header{
+    display: flex;
+    float: right;
+    align-items: center;
+    margin-right: 20px;
+    height: 80px;
+}
