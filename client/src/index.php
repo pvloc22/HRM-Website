@@ -20,16 +20,17 @@
 // require_once ("./model/profile_model.php");
 // require_once ("./model/update_profile_model.php");
 // require_once ("./model/detail_page_model.php");
+// session_start();
 
+// $action = "";
 
-$action = "";
-
-if (isset($_REQUEST["action"])) {
-    $action = $_REQUEST["action"];
-}
+// if (isset($_REQUEST["action"])) {
+//     $action = $_REQUEST["action"];
+// }
 
 session_start(); // Bắt đầu session
 // Kiểm tra xem session đã được khởi tạo và biến có tồn tại không
+$action = isset($_REQUEST["action"]) ? $_REQUEST["action"] : "";
 
 switch ($action) {
     case "login":
@@ -44,6 +45,7 @@ switch ($action) {
     case "homepage":
         $curentSidebar = 'document.getElementById("all-employees").classList.add("current_page")';
         $current_tab = 'homepage';
+        $VIEW = 'view/manager/all_employees.php';
         require_once"view/manager/template.php";
         break;
     case "create-employee":
@@ -81,7 +83,7 @@ switch ($action) {
         require_once"view/manager/template.php";
         break;   
     case "all-vouchers":
-        $VIEW ="view/manager/point_voucher.php";
+        $VIEW = "view/manager/point_voucher.php";
         $curentSidebar = 'document.getElementById("all-vouchers").classList.add("current_page")';
         $current_tab = 'all-vouchers';
         require_once"view/manager/template.php";
@@ -95,8 +97,9 @@ switch ($action) {
         require_once"view/staff/template.php";
         break;           
     default:
-        require_once"view/shared/login.php";
+        $VIEW = "view/manager/work_from_home.php";
+        require_once"view/manager/template.php";
         break;
-}
+};
 
 ?>
