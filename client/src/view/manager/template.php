@@ -174,7 +174,7 @@
                 <option value="logout">Logout</option>
             </select>
         `;
-        document.getElementById("header").appendChild(dropdown);
+        document.getElementById("header").appendChild('dropdown');
     }
 
     if (current_tab == "work-from-home") {
@@ -476,11 +476,12 @@
     let topScreen = 0;
     window.addEventListener('scroll', function() {
         const header = document.querySelector('.header');
+        const content = document.querySelector('.content')
         let currScreen = window.pageYOffset || document.documentElement.scrollTop
         if (currScreen > topScreen) {
-            header.style.top = '-60px'
+            header.style.top = '-9vh';
         } else {
-            header.style.top = '0px'
+            header.style.top = '0px';
         }
     });
 </script>

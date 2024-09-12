@@ -41,71 +41,71 @@
                 <tbody>
                     <tr>
                         <td class="tb-stt">1</td>
-                        <td class="tb-name">Nguyễn Hữu Lộc</td>
+                        <td class="tb-name">Phạm Hữu Lộc</td>
                         <td class="tb-email">example@gmal.com</td>
                         <td class="tb-phone">0987654321123</td>
                         <td class="tb-cccd">0123456789</td>
                         <td class="tb-actions">
                             <div class="actions">
-                                <button class="ishow"><i class='bx bx-show'></i></button>
-                                <button class="iedit"><i class='bx bx-edit-alt'></i></button>
-                                <button class="itrash"><i class='bx bx-trash'></i></button>
+                                <a href="index.php?action=view-employee&id=1" class="ishow"><i class='bx bx-show'></i></a>
+                                <a href="index.php?action=edit-employee&id=1" class="iedit"><i class='bx bx-edit-alt'></i></a>
+                                <a class="itrash"><i class='bx bx-trash'></i></a>
                             </div>
                         </td>
                     </tr>
                     <tr>
                         <td class="tb-stt">2</td>
-                        <td class="tb-name">Nguyễn Hữu Lộc</td>
+                        <td class="tb-name">Phạm Hữu Lộc</td>
                         <td class="tb-email">example@gmal.com</td>
                         <td class="tb-phone">0987654321123</td>
                         <td class="tb-cccd">0123456789</td>
                         <td class="tb-actions">
                             <div class="actions">
-                                <button class="ishow"><i class='bx bx-show'></i></button>
-                                <button class="iedit"><i class='bx bx-edit-alt'></i></button>
-                                <button class="itrash"><i class='bx bx-trash'></i></button>
+                                <a href="index.php?action=view-employee&id=2" class="ishow"><i class='bx bx-show'></i></a>
+                                <a href="index.php?action=edit-employee&id=2" class="iedit"><i class='bx bx-edit-alt'></i></a>
+                                <a class="itrash"><i class='bx bx-trash'></i></a>
                             </div>
                         </td>
                     </tr>
                     <tr>
                         <td class="tb-stt">3</td>
-                        <td class="tb-name">Nguyễn Hữu Lộc</td>
+                        <td class="tb-name">Phạm Hữu Lộc</td>
                         <td class="tb-email">example@gmal.com</td>
                         <td class="tb-phone">0987654321123</td>
                         <td class="tb-cccd">0123456789</td>
                         <td class="tb-actions">
                             <div class="actions">
-                                <button class="ishow"><i class='bx bx-show'></i></button>
-                                <button class="iedit"><i class='bx bx-edit-alt'></i></button>
-                                <button class="itrash"><i class='bx bx-trash'></i></button>
+                                <a href="index.php?action=view-employee&id=3" class="ishow"><i class='bx bx-show'></i></a>
+                                <a href="index.php?action=edit-employee&id=3" class="iedit"><i class='bx bx-edit-alt'></i></a>
+                                <a class="itrash"><i class='bx bx-trash'></i></a>
                             </div>
                         </td>
                     </tr>
                     <tr>
                         <td class="tb-stt">4</td>
-                        <td class="tb-name">Nguyễn Hữu Lộc</td>
+                        <td class="tb-name">Phạm Hữu Lộc</td>
                         <td class="tb-email">example@gmal.com</td>
                         <td class="tb-phone">0987654321123</td>
                         <td class="tb-cccd">0123456789</td>
                         <td class="tb-actions">
                             <div class="actions">
-                                <button class="ishow"><i class='bx bx-show'></i></button>
-                                <button class="iedit"><i class='bx bx-edit-alt'></i></button>
-                                <button class="itrash"><i class='bx bx-trash'></i></button>
+                                <a href="index.php?action=view-employee&id=4" class="ishow"><i class='bx bx-show'></i></a>
+                                <a href="index.php?action=edit-employee&id=4" class="iedit"><i class='bx bx-edit-alt'></i></a>
+                                <a class="itrash"><i class='bx bx-trash'></i></a>
                             </div>
                         </td>
                     </tr>
                     <tr>
                         <td class="tb-stt">5</td>
-                        <td class="tb-name">Nguyễn Hữu Lộc</td>
+                        <td class="tb-name">Phạm Hữu Lộc</td>
                         <td class="tb-email">example@gmal.com</td>
                         <td class="tb-phone">0987654321123</td>
                         <td class="tb-cccd">0123456789</td>
                         <td class="tb-actions">
                             <div class="actions">
-                                <button class="ishow"><i class='bx bx-show'></i></button>
-                                <button class="iedit"><i class='bx bx-edit-alt'></i></button>
-                                <button class="itrash"><i class='bx bx-trash'></i></button>
+                                <a href="index.php?action=view-employee&id=5" class="ishow"><i class='bx bx-show'></i></a>
+                                <a href="index.php?action=edit-employee&id=5" class="iedit"><i class='bx bx-edit-alt'></i></a>
+                                <a class="itrash"><i class='bx bx-trash'></i></a>
                             </div>
                         </td>
                     </tr>

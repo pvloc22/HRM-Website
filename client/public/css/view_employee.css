@@ -1,0 +1,242 @@
+.wrapper{
+    z-index: 7;
+    background-color: transparent;
+    min-height: 96vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+/* ------------------------------------------------- */
+.card-info {
+    background-color: #fff;
+    flex: 3;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-info-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 36px 0px 10px 0px;
+    gap: 9px;
+}
+.card-info-header .personal {
+    font-size: 20px;
+    font-weight: 600;
+}
+.card-info-header .position {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.25);
+}
+/* ------------------------------------------------- */
+.underline {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.25);
+    height: 1px;
+    width: 86%;
+}
+/* ------------------------------------------------- */
+.card-info-detail {
+    background-color: transparent;
+    padding: 0px 20px 30px 20px;
+    line-height: 18px;
+}
+.card-info-detail .label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 18px;
+}
+.card-info-detail div:not([class]) {
+    font-size: 13px;
+}
+/* ------------------------------------------------- */
+.statistic-cards {
+    background-color: transparent;
+    flex: 9;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 16px;
+}
+.statistic-cards div.label {
+    font-size: 14px;
+    font-weight: bold;
+}
+.statistic-cards div:not([class]) {
+    font-size: 13px;
+}
+/* ---------------------- */
+.bank-card {
+    background-color: #fff;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.bank-card>div {
+    line-height: 20px;
+    width: 20%;
+}
+/* ---------------------- */
+.activities-card{
+    background-color: #fff;
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.activities-card .act {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    gap: 10px;
+}
+.activities-card .act div:nth-child(2) {
+    font-size: 26px;
+    font-weight: bold;
+}
+.activities-card .act div:nth-child(3) {
+    font-size: 12px;
+    text-align: center;
+}
+/* ---------------------- */
+.score-card{
+    background-color: #fff;
+    flex: 8;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.score-card .label {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 3px;
+    margin-left: 3px;
+}
+.score-card .overall-act {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.score-card .overall-act>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    width: 16%;
+    padding: 6px 0px;
+    gap: 6px;
+}
+.score-card .overall-act>div span:first-child {
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.score-card .overall-act>div span:nth-child(2) {
+    font-weight: bold;
+}
+/* ---------------------- */
+.act-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.act-table {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 0px 30px;
+}
+
+.act-table thead {
+    background-color: #f3f3f3; 
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.act-table tbody {
+    display: block;
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.act-table th:nth-child(1), .act-table td:nth-child(1) {
+    width: 15%;
+}
+.act-table th:nth-child(2), .act-table td:nth-child(2) {
+    width: 35%;
+}
+.act-table th:nth-child(3), .act-table td:nth-child(3) {
+    width: 30%;
+}
+.act-table th:nth-child(4), .act-table td:nth-child(4) {
+    width: 20%;
+}
+
+.act-table thead, .act-table tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.act-table tbody tr {
+    height: 36px; 
+    border-bottom: 1px solid #ccc;
+}
+.act-table th, .act-table td {
+    padding: 9px; 
+    font-size: 13px; 
+    text-align: left; 
+}
+/* .act-table thead tr th {
+    border-bottom: 2px solid #ccc;
+} */
+
+.act-table table tbody tr .capsule {
+    background-color: #E7F7EF;
+    padding: 2px 9px;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 6px;
+    font-size: 11px;
+    color: #0b9f57;
+}
+
+/* Tùy chỉnh thanh cuộn */
+.act-table tbody::-webkit-scrollbar {
+    width: 3px; 
+    height: 6px; 
+}
+.act-table tbody::-webkit-scrollbar-track {
+    background: #f0f0f0;
+}
+.act-table tbody::-webkit-scrollbar-thumb {
+    background-color: #999; 
+    border-radius: 10px; 
+    border: 1px solid #f1f1f1; 
+}
+.act-table tbody::-webkit-scrollbar-thumb:hover {
+    background-color: #666;
+}
+
+
+/* ---------------------- */
+.card-info .avatar {
+	border: 3px solid rgba(0, 0, 0, 0.15);
+	box-sizing: border-box;
+	height: 139px;
+    width: 139px;
+	border-radius: 50%;
+	position: relative;
+	.avatar__image {
+		width: 100%;
+		border-radius: 50%;
+	}
+}
+

@@ -31,6 +31,7 @@
 session_start(); // Bắt đầu session
 // Kiểm tra xem session đã được khởi tạo và biến có tồn tại không
 $action = isset($_REQUEST["action"]) ? $_REQUEST["action"] : "";
+$employee_id = isset($_REQUEST["id"]) ? intval($_REQUEST["id"]) : null;
 
 switch ($action) {
     case "login":
@@ -43,14 +44,27 @@ switch ($action) {
         require_once"view/shared/faild.php";
         break;
     case "homepage":
-        $curentSidebar = 'document.getElementById("all-employees").classList.add("current_page")';
+        $curentSidebar = 'document.getElementById("all-employees").classList.add("active")';
         $current_tab = 'homepage';
         $VIEW = 'view/manager/all_employees.php';
         require_once"view/manager/template.php";
         break;
+    case "view-employee":
+        $curentSidebar = 'document.getElementById("all-employees").classList.add("active")';
+        $current_tab = 'homepage';
+        $VIEW = 'view/manager/view_employee.php';
+        require_once"view/manager/template.php";
+        break;
+    case "edit-employee":
+        $curentSidebar = 'document.getElementById("all-employees").classList.add("active")';
+        $current_tab = 'homepage';
+        $VIEW = 'view/manager/edit_employee.php';
+        require_once"view/manager/template.php";
+        break;
     case "create-employee":
-        $curentSidebar = 'document.getElementById("create-employee").classList.add("current_page")';
+        $curentSidebar = 'document.getElementById("create-employee").classList.add("active")';
         $current_tab = 'create-employee';
+        $VIEW = 'view/manager/create_employee.php';
         require_once"view/manager/template.php";
         break;
     case "leave":
