@@ -7,18 +7,19 @@
     padding: 16px;
     overflow-y: auto;
 }
-.empty-block {
-    width: 20px;
-}
-/* ------------------------- */
 .wrapper-header {
     display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+
+    margin-top: 6px;
+}
+.wrapper-header .label {
+    font-size: 14px;
+    font-weight: bold;
 }
 .browse {
-    --padding: 6px;
+    --padding: 3px;
     width: max-content;
     display: flex;
     align-items: center;
@@ -27,13 +28,13 @@
     border-radius: 11px;
 }
 .browse .search-bar {
-    width: 39vh;
-    height: 4vh;
+    width: 33vh;
+    height: 3vh;
     background-color: transparent;
     border: none;
     outline: none;
     color: #333333;
-    font-size: 14px;
+    font-size: 13px;
     margin-left: 3px;
 }
 .browse .search-bar::placeholder {
@@ -49,25 +50,6 @@
     color: rgba(0, 0, 0, 0.25);
 }
 
-.custom-select {
-    background-color: white;
-    border: 1px solid rgba(0, 0, 0, 0.25);
-    border-radius: 9px;
-    padding: 8px;
-    cursor: pointer;
-    font-size: 13px;
-    outline: none;
-}
-.custom-select option {
-    padding: 8px;
-}
-
-
-/* ------------------------- */
-.spacer {
-    width: 100%;
-    height: 10px;
-}
 .wrapper-main {
     display: flex;
     flex-direction: column;
@@ -97,17 +79,22 @@
 .wrapper-main table .tb-stt {
     width: 10%;
 }
-.wrapper-main table .tb-name {
-    width: 20%;
-}
-.wrapper-main table .tb-email {
+.wrapper-main table .tb-titl {
     width: 25%;
 }
-.wrapper-main table .tb-phone {
-    width: 15%;
+.wrapper-main table .tb-desc {
+    max-width: 200px; /* Điều chỉnh kích thước theo nhu cầu */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
-.wrapper-main table .tb-cccd {
-    width: 15%;
+.wrapper-main table .tb-dur {
+    width: 25%;
+}
+.wrapper-main table .tb-dur > div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 .wrapper-main table .tb-actions {
     display: flex;
@@ -190,3 +177,32 @@
     }
   }
 
+
+.auth-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.capsule {
+    background-color: #E7F7EF;
+    padding: 2px 9px;
+    height: fit-content;
+    width: 30%;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 11px;
+    color: #0b9f57;
+    margin-right: 9px;
+}
+.capsule-no {
+    background-color: #FEE9F1;
+    padding: 2px 9px;
+    text-align: center;
+    height: fit-content;
+    width: 30%;
+    border-radius: 6px;
+    font-size: 11px;
+    color: #F22772;
+    margin-right: 9px;
+}

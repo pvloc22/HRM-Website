@@ -69,41 +69,47 @@ switch ($action) {
         break;
     case "leave":
         $VIEW ="view/manager/show_requests.php";
-        $curentSidebar = 'document.getElementById("leave").classList.add("current_page")';
+        $curentSidebar = 'document.getElementById("leave").classList.add("active")';
         $current_tab = 'leave';
         require_once"view/manager/template.php";
         break;
     case "update-time":
         $VIEW ="view/manager/show_requests.php";
-        $curentSidebar = 'document.getElementById("update-time").classList.add("current_page")';
+        $curentSidebar = 'document.getElementById("update-time").classList.add("active")';
         $current_tab = 'update-time';
         require_once"view/manager/template.php";
         break;   
     case "work-from-home":
         $VIEW ="view/manager/show_requests.php";
-        $curentSidebar = 'document.getElementById("work-from-home").classList.add("current_page")';
+        $curentSidebar = 'document.getElementById("work-from-home").classList.add("active")';
         $current_tab = 'work-from-home';
         require_once"view/manager/template.php";
-        break;   
+        break;  
+    case "view-request":
+        $VIEW ="view/manager/view_request.php";
+        $curentSidebar = 'document.getElementById("work-from-home").classList.add("active")';
+        $current_tab = 'work-from-home';
+        require_once"view/manager/template.php";
+        break;  
     case "all-activities":
-        $VIEW ="view/manager/all_events.php";
-        $curentSidebar = 'document.getElementById("all-activities").classList.add("current_page")';
+        $VIEW ="view/manager/all_activities.php";
+        $curentSidebar = 'document.getElementById("all-activities").classList.add("active")';
         $current_tab = 'all-activities';
         require_once"view/manager/template.php";
         break;   
     case "create-activity":
-        $curentSidebar = 'document.getElementById("create-activity").classList.add("current_page")';
+        $curentSidebar = 'document.getElementById("create-activity").classList.add("active")';
         $current_tab = 'create-activity';
         require_once"view/manager/template.php";
         break;   
     case "all-vouchers":
         $VIEW = "view/manager/point_voucher.php";
-        $curentSidebar = 'document.getElementById("all-vouchers").classList.add("current_page")';
+        $curentSidebar = 'document.getElementById("all-vouchers").classList.add("active")';
         $current_tab = 'all-vouchers';
         require_once"view/manager/template.php";
         break;
     case "create-voucher":
-        $curentSidebar = 'document.getElementById("create-voucher").classList.add("current_page")';
+        $curentSidebar = 'document.getElementById("create-voucher").classList.add("active")';
         $current_tab = 'create-voucher';
         require_once"view/manager/template.php";
         break; 
