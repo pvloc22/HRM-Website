@@ -1,0 +1,207 @@
+.wrapper {
+    background-color: transparent;
+    z-index: 7;
+    min-height: 93vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.wrapper > div {
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.wrapper-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 6px;
+}
+.wrapper-header .label {
+    font-size: 14px;
+    font-weight: bold;
+}
+/* -------------------------------------------- */
+.new-requests-wrapper {
+    background-color: white;
+    flex: 5;
+}
+.browse {
+    --padding: 3px;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: var(--padding);
+    background-color: #eaeaea;
+    border-radius: 11px;
+}
+.browse .search-bar {
+    width: 33vh;
+    height: 3vh;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #333333;
+    font-size: 13px;
+    margin-left: 3px;
+}
+.browse .search-bar::placeholder {
+    color: rgba(0, 0, 0, 0.25);
+}
+.browse .search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-right: 6px;
+    margin-left: 3px;
+    color: rgba(0, 0, 0, 0.25);
+}
+/* -------------------------------------------- */
+.wrapper>div table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.wrapper>div {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.wrapper>div thead {
+    background-color: #f3f3f3; 
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.wrapper>div tbody {
+    display: block;
+    height: 72vh;
+    overflow-y: scroll;
+}
+.wrapper>div th:nth-child(1), .wrapper>div td:nth-child(1) {
+    width: 15%;
+}
+.wrapper>div th:nth-child(2), .wrapper>div td:nth-child(2) {
+    width: 35%;
+}
+.wrapper>div th:nth-child(3), .wrapper>div td:nth-child(3) {
+    width: 30%;
+}
+.wrapper>div th:nth-child(4), .wrapper>div td:nth-child(4) {
+    width: 20%;
+}
+.wrapper>div thead, .wrapper>div tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.wrapper>div tbody tr { 
+    border-bottom: 1px dashed #000;
+}
+.wrapper>div th, .wrapper>div td {
+    padding: 13px 0px 3px 0px; 
+    font-size: 13px; 
+    text-align: left; 
+}
+/* .wrapper>div thead tr th {
+    border-bottom: 2px solid #ccc;
+} */
+
+.wrapper>div table tbody tr .capsule {
+    background-color: #E7F7EF;
+    padding: 2px 9px;
+    height: fit-content;
+    width: 69%;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 11px;
+    color: #0b9f57;
+}
+.wrapper>div table tbody tr .capsule-no {
+    background-color: #FEE9F1;
+    padding: 2px 9px;
+    text-align: center;
+    height: fit-content;
+    width: 69%;
+    border-radius: 6px;
+    font-size: 11px;
+    color: #F22772;
+}
+
+/* Tùy chỉnh thanh cuộn */
+.wrapper>div tbody::-webkit-scrollbar {
+    width: 3px; 
+    height: 6px; 
+}
+.wrapper>div tbody::-webkit-scrollbar-track {
+    background: #f0f0f0;
+}
+.wrapper>div tbody::-webkit-scrollbar-thumb {
+    background-color: #999; 
+    border-radius: 10px; 
+    border: 1px solid #f1f1f1; 
+}
+.wrapper>div tbody::-webkit-scrollbar-thumb:hover {
+    background-color: #666;
+}
+/* -------------------------------------------- */
+.emp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3px;
+}
+.emp .mini-avatar {
+	border: none;
+	height: 26px;
+    width: 26px;
+	border-radius: 50%;
+	position: relative;
+	.avatar__image {
+		width: 100%;
+		border-radius: 50%;
+	}
+}
+.emp .name_email div:first-child {
+    font-size: 12px;
+    font-weight: 600;
+}
+.emp .name_email div:last-child {
+    font-size: 11px;
+}
+/* -------------------------------------------- */
+.checked-requests-wrapper {
+    background-color: white;
+    flex: 5;
+}
+/* -------------------------------------------- */
+.tb-actions .actions a {
+    cursor: pointer;
+    margin: 0 3px;
+    font-size: 20px; /* Adjust size as needed */
+    color: #333; /* Set color for the icons */
+    transition: color 0.3s ease;
+}
+.tb-actions .actions a:hover {
+    color: #e7f6ef; 
+}
+.tb-actions .actions i {
+    font-size: inherit;
+}
+.tb-actions .actions i:hover {
+    color: #e7f6ef;
+}
+.ishow i {
+    color: #8C62FF;
+}
+.iyes i {
+    color: #3E84F4;
+}
+.ino i {
+    color: #F22772;
+}

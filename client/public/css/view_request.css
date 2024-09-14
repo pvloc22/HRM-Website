@@ -1,0 +1,148 @@
+.wrapper {
+    display: block;
+    z-index: 7;
+    background-color: #fff;
+    height: 93vh;
+    padding: 20px 39px 0px 39px;
+}
+.wrapper form .form-row:not(.form-btns) {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px 23px 0px;
+}
+.wrapper form .form-row .input-data{ 
+    margin: 0 16px;
+    line-height: 16px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.wrapper form .form-row .input-data .label {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 3px;
+    text-shadow: 2px 2px #f5f5f5;
+    display: flex;
+}
+.wrapper form .form-row .input-data input  {
+    display: block;
+    height: fit-content;
+    padding: 6px 3px;
+    border: none;
+    font-size: 13px;
+    border-bottom: 1px solid rgba(0,0,0, 0.5);
+    outline: none;
+    pointer-events: none;
+}
+.wrapper form .form-row .input-data input::placeholder {
+    color: rgba(0, 0, 0, 0.25);
+}
+.form-row #fullname>input, .form-row #phone>input,
+.form-row #email>input, .form-row #bankname>input,
+.form-row #banknumber>input, .form-row #idcard>input {
+    width: 300px;
+}
+.form-row #age {
+    margin-right: 114px;
+}
+.form-row #age>input {
+    width: 12vw;
+}
+.form-row #address {
+    width: 100%;
+}
+.form-row #address>input {
+    width: 100%;    
+}
+.input-data .underline{
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+}
+.input-data .underline:before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #3498db;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.2s ease;
+}
+.input-data input:focus~.underline:before,
+.input-data input:valid~.underline:before {
+    transform: scale(1);
+}
+.form-row.form-btns {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 13px;
+    margin-left: 16px;
+}
+.form-row.form-btns a.btn {
+    display: flex;
+    padding: 9px 20px;
+    border-radius: 6px;
+    border: none;
+    align-items: center;
+}
+.form-row.form-btns a.cancel-btn {
+    margin-right: 16px;
+    background-color: #E7F7EF;
+    color: #097C44;
+}
+.form-row.form-btns a.confirm-btn {
+    margin-right: 16px;
+    background-color: #0B9F57;
+    color: #FFFFFF;
+}
+.form-row.form-btns a.confirm-btn i{
+    margin-right: 16px;
+}
+.form-row.form-btns a.reject-btn {
+    margin-right: 16px;
+    background-color: #FEE9F1;
+    color: #F22772;
+}
+.form-row.form-btns a.reject-btn i{
+    margin-right: 16px;
+}
+
+.wrapper form input[type="number"]::-webkit-inner-spin-button, 
+.wrapper form input[type="number"]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+.wrapper form input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: none;
+}
+
+.emp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3px;
+}
+.emp .mini-avatar {
+	border: none;
+	height: 26px;
+    width: 26px;
+	border-radius: 50%;
+	position: relative;
+	.avatar__image {
+		width: 100%;
+		border-radius: 50%;
+	}
+}
+.emp .name_email div:first-child {
+    font-size: 12px;
+    font-weight: 600;
+}
+.emp .name_email div:last-child {
+    font-size: 11px;
+}
